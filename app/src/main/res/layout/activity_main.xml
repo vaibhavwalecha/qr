@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimaryDark"
+
+    tools:context="vw.scanit.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of app"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/welcometv"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginTop="104dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="179dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/linearLayout">
+
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Code "
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:id="@+id/scanbutton"/>
+
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Code "
+        android:textSize="15dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:id="@+id/generatebutton"/>
+    </LinearLayout>
+</RelativeLayout>
